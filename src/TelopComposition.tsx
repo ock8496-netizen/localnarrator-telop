@@ -48,7 +48,7 @@ export const TelopComposition: React.FC<{ telop: Telop }> = ({ telop }) => {
         return <Impact text={text} {...props} />;
 
       case "SectionTitle":
-        return <SectionTitle label={text} {...props} />;
+        return <SectionTitle label={text} variant={props.variant ?? "plain"} {...props} />;
 
       case "InfoBar":
         return <InfoBar text={text} {...props} />;
@@ -57,7 +57,7 @@ export const TelopComposition: React.FC<{ telop: Telop }> = ({ telop }) => {
         return <Note text={text} {...props} />;
 
       case "ListScreen":
-        return <ListScreen {...props} />;
+        return <ListScreen variant={props.variant ?? "list"} items={props.items ?? []} {...props} />;
 
       case "Comparison": {
         const before = props.before ?? 25;

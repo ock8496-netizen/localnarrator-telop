@@ -4,7 +4,7 @@ import { Composition } from "remotion";
 import { TelopComposition } from "./TelopComposition";
 import telopsData from "./LocalNarratorTTS_telop_data_v2.json";
 
-const FPS = 30;
+const FPS = 60;
 const WIDTH = 1920;
 const HEIGHT = 1080;
 

@@ -1,5 +1,6 @@
 // Impact.tsx
 import React from "react";
+import { Trail } from "@remotion/motion-blur";
 import { colors, fonts } from "./theme";
 import { useSlideUp, useFadeIn } from "./animations";
 import { Glow, TimelineDeco, DarkBg } from "./shared";
@@ -129,6 +130,7 @@ export const Impact: React.FC<Props> = ({
         {showTimeline && <TimelineDeco />}
 
         {/* テキストブロック */}
+        <Trail layers={4} lagInFrames={2} trailOpacity={0.5}>
         <div
           style={{
             position: "absolute",
@@ -161,6 +163,7 @@ export const Impact: React.FC<Props> = ({
             </p>
           )}
         </div>
+        </Trail>
       </div>
     </DarkBg>
   );

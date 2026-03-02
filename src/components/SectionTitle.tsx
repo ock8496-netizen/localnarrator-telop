@@ -1,6 +1,7 @@
 // SectionTitle.tsx
 import React from "react";
 import { AbsoluteFill } from "remotion";
+import { Trail } from "@remotion/motion-blur";
 import { colors, fonts, sizes } from "./theme";
 import { useSlideUp, useSlideRight, useProgressBar, useFadeIn } from "./animations";
 import { Glow, TimelineDeco, YellowRule, DarkBg } from "./shared";
@@ -104,7 +105,6 @@ export const SectionTitle: React.FC<Props> = ({
               position: "absolute",
               top: "50%",
               left: sizes.marginLeft,
-              transform: "translateY(-50%)",
               ...titleAnim,
             }}
           >
@@ -224,6 +224,7 @@ export const SectionTitle: React.FC<Props> = ({
         </div>
 
         {/* コンテンツ */}
+        <Trail layers={3} lagInFrames={2} trailOpacity={0.5}>
         <div
           style={{
             position: "absolute",
@@ -283,6 +284,7 @@ export const SectionTitle: React.FC<Props> = ({
             {renderTitle()}
           </h2>
         </div>
+        </Trail>
 
         {/* プログレスバー */}
         <div

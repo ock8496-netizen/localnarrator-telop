@@ -1,5 +1,6 @@
 // ListScreen.tsx
 import React from "react";
+import { Trail } from "@remotion/motion-blur";
 import { colors, fonts, sizes } from "./theme";
 import { useSlideUp, useFadeIn, staggerDelay } from "./animations";
 import { Glow, YellowRule, DarkBg } from "./shared";
@@ -39,8 +40,8 @@ export const ListScreen: React.FC<Props> = ({
             {items.map((item, i) => {
               const anim = useSlideUp(staggerDelay(i, 6) + 5);
               return (
+                <Trail key={i} layers={3} lagInFrames={2} trailOpacity={0.5}>
                 <div
-                  key={i}
                   style={{
                     background: colors.bgCard,
                     border: `1px solid ${colors.border}`,
@@ -55,6 +56,7 @@ export const ListScreen: React.FC<Props> = ({
                 >
                   {item.label}
                 </div>
+                </Trail>
               );
             })}
           </div>
