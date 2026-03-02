@@ -3,3 +3,9 @@ output/
 .remotion/
 *.log
 .DS_Store
+
+# offline: 大容量ファイル除外
+offline/*.mp4
+offline/*.mov
+offline/audio/
+offline/se_candidates/

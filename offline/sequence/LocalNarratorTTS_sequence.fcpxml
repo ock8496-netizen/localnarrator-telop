@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.9">
+  <resources>
+    <format id="r1" name="FFVideoFormat1080p30" frameDuration="1/30s" width="1920" height="1080" colorSpace="1-1-1 (Rec. 709)"/>
+    <asset id="r_nar" name="narration_mixed" src="file:///Users/oc_k00/oc-work/projects/localnarrator-offline/sequence/narration_mixed.wav" duration="11550/30s" hasAudio="1" hasVideo="0" audioSources="1" audioChannels="1" audioRate="48000"/>
+    <asset id="r100" name="01_impact" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/01_impact.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r101" name="02_impact" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/02_impact.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r102" name="03_note" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/03_note.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r103" name="04_note" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/04_note.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r104" name="05_section_title" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/05_section_title.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r105" name="06_list_item" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/06_list_item.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r106" name="10_impact" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/10_impact.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r107" name="11_info" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/11_info.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r108" name="12_section_title" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/12_section_title.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r109" name="13_info" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/13_info.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r110" name="14_info" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/14_info.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r111" name="15_section_title" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/15_section_title.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r112" name="16_info" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/16_info.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r113" name="17_info" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/17_info.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r114" name="18_info" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/18_info.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r115" name="19_section_title" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/19_section_title.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r116" name="20_info" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/20_info.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r117" name="21_info" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/21_info.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r118" name="22_info" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/22_info.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r119" name="23_section_title" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/23_section_title.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r120" name="24_section_title" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/24_section_title.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r121" name="25_note" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/25_note.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r122" name="26_impact" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/26_impact.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r123" name="27_section_title" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/27_section_title.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r124" name="28_comparison" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/28_comparison.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r125" name="29_section_title" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/29_section_title.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r126" name="30_info" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/30_info.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r127" name="31_note" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/31_note.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r128" name="32_section_title" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/32_section_title.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r129" name="33_info" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/33_info.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r130" name="34_info" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/34_info.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r131" name="35_section_title" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/35_section_title.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r132" name="36_info" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/36_info.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r133" name="37_info" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/37_info.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r134" name="38_info" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/38_info.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r135" name="39_info" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/39_info.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r136" name="40_impact" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/40_impact.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r137" name="41_list_item" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/41_list_item.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+    <asset id="r138" name="42_end_card" src="file:///Users/oc_k00/oc-work/projects/localnarrator-telop/output/42_end_card.mp4" duration="300/30s" hasVideo="1" hasAudio="1" videoSources="1" audioSources="1" audioChannels="2" audioRate="44100" format="r1"/>
+  </resources>
+  <library>
+    <event name="LocalNarratorTTS_offline">
+      <project name="LocalNarratorTTS_v1">
+        <sequence format="r1" duration="11550/30s" tcStart="0/1s" tcFormat="NDF" audioLayout="mono" audioRate="48k">
+          <spine>
+            <gap name="BLACK" offset="0/1s" duration="11550/30s" start="0/1s"/>
+            <asset-clip ref="r_nar" name="narration_mixed" offset="0/1s" duration="11550/30s" start="0/1s" lane="-1"/>
+            <asset-clip ref="r100" name="01_impact" offset="0/30s" duration="90/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r101" name="02_impact" offset="105/30s" duration="120/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r102" name="03_note" offset="510/30s" duration="90/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r103" name="04_note" offset="660/30s" duration="90/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r104" name="05_section_title" offset="990/30s" duration="75/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r105" name="06_list_item" offset="1410/30s" duration="180/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r106" name="10_impact" offset="1740/30s" duration="120/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r107" name="11_info" offset="2040/30s" duration="120/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r108" name="12_section_title" offset="2250/30s" duration="90/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r109" name="13_info" offset="2340/30s" duration="150/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r110" name="14_info" offset="2700/30s" duration="150/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r111" name="15_section_title" offset="3300/30s" duration="90/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r112" name="16_info" offset="3390/30s" duration="150/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r113" name="17_info" offset="3630/30s" duration="120/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r114" name="18_info" offset="4050/30s" duration="150/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r115" name="19_section_title" offset="4500/30s" duration="90/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r116" name="20_info" offset="4590/30s" duration="120/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r117" name="21_info" offset="4950/30s" duration="120/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r118" name="22_info" offset="5310/30s" duration="120/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r119" name="23_section_title" offset="5700/30s" duration="90/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r120" name="24_section_title" offset="6300/30s" duration="90/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r121" name="25_note" offset="6390/30s" duration="90/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r122" name="26_impact" offset="6900/30s" duration="105/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r123" name="27_section_title" offset="7200/30s" duration="90/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r124" name="28_comparison" offset="7590/30s" duration="150/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r125" name="29_section_title" offset="8100/30s" duration="90/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r126" name="30_info" offset="8190/30s" duration="150/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r127" name="31_note" offset="8490/30s" duration="90/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r128" name="32_section_title" offset="8850/30s" duration="90/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r129" name="33_info" offset="8940/30s" duration="150/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r130" name="34_info" offset="9360/30s" duration="120/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r131" name="35_section_title" offset="9600/30s" duration="75/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r132" name="36_info" offset="9660/30s" duration="150/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r133" name="37_info" offset="10050/30s" duration="120/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r134" name="38_info" offset="10290/30s" duration="150/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r135" name="39_info" offset="10500/30s" duration="150/30s" start="0/1s" lane="2"/>
+            <asset-clip ref="r136" name="40_impact" offset="10650/30s" duration="120/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r137" name="41_list_item" offset="10800/30s" duration="120/30s" start="0/1s" lane="1"/>
+            <asset-clip ref="r138" name="42_end_card" offset="11220/30s" duration="240/30s" start="0/1s" lane="1"/>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>
