@@ -1,0 +1,5 @@
+node_modules/
+output/
+.remotion/
+*.log
+.DS_Store

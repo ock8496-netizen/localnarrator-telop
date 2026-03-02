@@ -1,0 +1,459 @@
+{
+  "meta": {
+    "project": "LocalNarratorTTS チュートリアル動画",
+    "canvas": { "width": 1920, "height": 1080 },
+    "fps": 30,
+    "version": "v2",
+    "note": "alpha=true はオーバーレイ用（透過背景で書き出し）。alpha=false はフルスクリーングラフィック。duration は秒。component は Remotion コンポーネント名。"
+  },
+  "telops": [
+    {
+      "id": 1,
+      "section": "オープニング",
+      "type": "impact",
+      "text": "音声にNG…再収録できない…",
+      "alpha": false,
+      "duration": 3,
+      "component": "Impact",
+      "props": { "size": "xl" }
+    },
+    {
+      "id": 2,
+      "section": "オープニング",
+      "type": "impact",
+      "text": "テキストを打つだけで音声を差し替え",
+      "alpha": false,
+      "duration": 4,
+      "component": "Impact",
+      "props": { "size": "xl", "highlight": "音声を差し替え", "showTimeline": true }
+    },
+    {
+      "id": 3,
+      "section": "オープニング",
+      "type": "note",
+      "text": "完璧なクローンではありません",
+      "alpha": true,
+      "duration": 3,
+      "component": "Note",
+      "props": { "position": "bottom-right", "prefix": "※" }
+    },
+    {
+      "id": 4,
+      "section": "オープニング",
+      "type": "note",
+      "text": "仮ナレ・下読みに十分実用的",
+      "alpha": true,
+      "duration": 3,
+      "component": "Note",
+      "props": { "position": "bottom-center" }
+    },
+    {
+      "id": 5,
+      "section": "できること",
+      "type": "section_title",
+      "text": "できること",
+      "alpha": false,
+      "duration": 2.5,
+      "component": "SectionTitle",
+      "props": { "variant": "plain", "label": "できること" }
+    },
+    {
+      "id": 6,
+      "section": "できること",
+      "type": "list_item",
+      "text": "❶ ボイスクローンで音声差し替え",
+      "alpha": false,
+      "duration": 6,
+      "component": "ListScreen",
+      "props": {
+        "variant": "list",
+        "header": "できること",
+        "items": [
+          { "label": "ボイスクローンで音声差し替え" },
+          { "label": "タイムラインに自動配置" },
+          { "label": "サーバーモードで高速生成" },
+          { "label": "バリエーション生成" }
+        ]
+      },
+      "note": "ID 6-9 を1画面にまとめて表示"
+    },
+    {
+      "id": 7,
+      "section": "できること",
+      "type": "list_item",
+      "text": "❷ タイムラインに自動配置",
+      "alpha": false,
+      "duration": 0,
+      "component": "ListScreen",
+      "props": {},
+      "note": "ID 6 に統合済み。単体では使用しない"
+    },
+    {
+      "id": 8,
+      "section": "できること",
+      "type": "list_item",
+      "text": "❸ サーバーモードで高速生成",
+      "alpha": false,
+      "duration": 0,
+      "component": "ListScreen",
+      "props": {},
+      "note": "ID 6 に統合済み。単体では使用しない"
+    },
+    {
+      "id": 9,
+      "section": "できること",
+      "type": "list_item",
+      "text": "❹ バリエーション生成",
+      "alpha": false,
+      "duration": 0,
+      "component": "ListScreen",
+      "props": {},
+      "note": "ID 6 に統合済み。単体では使用しない"
+    },
+    {
+      "id": 10,
+      "section": "できること",
+      "type": "impact",
+      "text": "完全ローカル ／ ネット不要 ／ APIキー不要",
+      "alpha": false,
+      "duration": 4,
+      "component": "Impact",
+      "props": { "size": "l", "sub": "音声データは一切外部に送信されません" }
+    },
+    {
+      "id": 11,
+      "section": "できること",
+      "type": "info",
+      "text": "300文字以上 → 句点で自動分割",
+      "alpha": true,
+      "duration": 4,
+      "component": "InfoBar",
+      "props": { "size": "m", "codes": ["300文字以上"] }
+    },
+    {
+      "id": 12,
+      "section": "インストール",
+      "type": "section_title",
+      "text": "インストール：Mac",
+      "alpha": false,
+      "duration": 3,
+      "component": "SectionTitle",
+      "props": { "variant": "step", "step": 1, "total": 6, "label": "インストール：Mac", "highlight": "Mac" }
+    },
+    {
+      "id": 13,
+      "section": "インストール",
+      "type": "info",
+      "text": "install.command をダブルクリック",
+      "alpha": true,
+      "duration": 5,
+      "component": "InfoBar",
+      "props": { "size": "m", "codes": ["install.command"] }
+    },
+    {
+      "id": 14,
+      "section": "インストール",
+      "type": "info",
+      "text": "「開発元が未確認」→ 右クリック →「開く」",
+      "alpha": true,
+      "duration": 5,
+      "component": "InfoBar",
+      "props": { "size": "m" }
+    },
+    {
+      "id": 15,
+      "section": "インストール",
+      "type": "section_title",
+      "text": "インストール：Windows",
+      "alpha": false,
+      "duration": 3,
+      "component": "SectionTitle",
+      "props": { "variant": "step", "step": 1, "total": 6, "label": "インストール：Windows", "highlight": "Windows" }
+    },
+    {
+      "id": 16,
+      "section": "インストール",
+      "type": "info",
+      "text": "install.bat をダブルクリック",
+      "alpha": true,
+      "duration": 5,
+      "component": "InfoBar",
+      "props": { "size": "m", "codes": ["install.bat"] }
+    },
+    {
+      "id": 17,
+      "section": "インストール",
+      "type": "info",
+      "text": "「詳細情報」→「実行」",
+      "alpha": true,
+      "duration": 4,
+      "component": "InfoBar",
+      "props": { "size": "m" }
+    },
+    {
+      "id": 18,
+      "section": "インストール",
+      "type": "info",
+      "text": "ウィンドウ → エクステンション → Local TTS Narrator",
+      "alpha": true,
+      "duration": 5,
+      "component": "InfoBar",
+      "props": { "size": "m", "codes": ["Local TTS Narrator"] }
+    },
+    {
+      "id": 19,
+      "section": "STEP 1",
+      "type": "section_title",
+      "text": "STEP 1：言語と参照音声を設定",
+      "alpha": false,
+      "duration": 3,
+      "component": "SectionTitle",
+      "props": { "variant": "step", "step": 1, "total": 6 }
+    },
+    {
+      "id": 20,
+      "section": "STEP 1",
+      "type": "info",
+      "text": "対応言語：日本語 / 英語 / 中国語 / 韓国語 / フランス語 / スペイン語",
+      "alpha": true,
+      "duration": 4,
+      "component": "InfoBar",
+      "props": { "size": "s" }
+    },
+    {
+      "id": 21,
+      "section": "STEP 1",
+      "type": "info",
+      "text": "参照音声：6秒以上のWAVファイル推奨",
+      "alpha": true,
+      "duration": 4,
+      "component": "InfoBar",
+      "props": { "size": "m", "codes": ["6秒以上"] }
+    },
+    {
+      "id": 22,
+      "section": "STEP 1",
+      "type": "info",
+      "text": "Reference Transcript → 書き起こしを入力",
+      "alpha": true,
+      "duration": 4,
+      "component": "InfoBar",
+      "props": { "size": "m", "codes": ["Reference Transcript"] }
+    },
+    {
+      "id": 23,
+      "section": "STEP 2",
+      "type": "section_title",
+      "text": "STEP 2：テキストを入力",
+      "alpha": false,
+      "duration": 3,
+      "component": "SectionTitle",
+      "props": { "variant": "step", "step": 2, "total": 6 }
+    },
+    {
+      "id": 24,
+      "section": "STEP 3",
+      "type": "section_title",
+      "text": "STEP 3：生成 → タイムライン配置",
+      "alpha": false,
+      "duration": 3,
+      "component": "SectionTitle",
+      "props": { "variant": "step", "step": 3, "total": 6, "highlight": "生成", "showTimeline": true }
+    },
+    {
+      "id": 25,
+      "section": "STEP 3",
+      "type": "note",
+      "text": "TTS = テキストから音声を生成する技術",
+      "alpha": true,
+      "duration": 3,
+      "component": "Note",
+      "props": { "position": "bottom-right" }
+    },
+    {
+      "id": 26,
+      "section": "STEP 3",
+      "type": "impact",
+      "text": "テキスト入力→配置まで 1ボタンで完結",
+      "alpha": false,
+      "duration": 3.5,
+      "component": "Impact",
+      "props": { "size": "l", "highlight": "1ボタンで完結" }
+    },
+    {
+      "id": 27,
+      "section": "STEP 4",
+      "type": "section_title",
+      "text": "STEP 4：サーバーモードで高速化",
+      "alpha": false,
+      "duration": 3,
+      "component": "SectionTitle",
+      "props": { "variant": "step", "step": 4, "total": 6, "highlight": "高速化" }
+    },
+    {
+      "id": 28,
+      "section": "STEP 4",
+      "type": "comparison",
+      "text": "通常：約25秒 → サーバーモード：約10〜15秒",
+      "alpha": false,
+      "duration": 5,
+      "component": "Comparison",
+      "props": {
+        "beforeLabel": "通常モード",
+        "beforeValue": 25,
+        "afterLabel": "サーバーモード",
+        "afterValue": 10,
+        "speedup": "最大60%高速化"
+      }
+    },
+    {
+      "id": 29,
+      "section": "STEP 5",
+      "type": "section_title",
+      "text": "STEP 5：バリエーション生成",
+      "alpha": false,
+      "duration": 3,
+      "component": "SectionTitle",
+      "props": { "variant": "step", "step": 5, "total": 6 }
+    },
+    {
+      "id": 30,
+      "section": "STEP 5",
+      "type": "info",
+      "text": "2〜5テイクを一括生成 → ベストを選択",
+      "alpha": true,
+      "duration": 5,
+      "component": "InfoBar",
+      "props": { "size": "m", "codes": ["2〜5テイク"] }
+    },
+    {
+      "id": 31,
+      "section": "STEP 5",
+      "type": "note",
+      "text": "末尾のパディングはトリムで削除",
+      "alpha": true,
+      "duration": 3,
+      "component": "Note",
+      "props": { "position": "bottom-right" }
+    },
+    {
+      "id": 32,
+      "section": "STEP 6",
+      "type": "section_title",
+      "text": "STEP 6：長文テキストの自動分割",
+      "alpha": false,
+      "duration": 3,
+      "component": "SectionTitle",
+      "props": { "variant": "step", "step": 6, "total": 6, "highlight": "自動分割" }
+    },
+    {
+      "id": 33,
+      "section": "STEP 6",
+      "type": "info",
+      "text": "300文字以上 → 句点で自動分割 → 連続配置",
+      "alpha": true,
+      "duration": 5,
+      "component": "InfoBar",
+      "props": { "size": "m", "codes": ["300文字以上"] }
+    },
+    {
+      "id": 34,
+      "section": "STEP 6",
+      "type": "info",
+      "text": "目安：1000文字 ≒ 90秒 ／ 3000文字 ≒ 5分",
+      "alpha": true,
+      "duration": 4,
+      "component": "InfoBar",
+      "props": { "size": "s", "codes": ["1000文字 ≒ 90秒", "3000文字 ≒ 5分"] }
+    },
+    {
+      "id": 35,
+      "section": "Tips",
+      "type": "section_title",
+      "text": "Tips",
+      "alpha": false,
+      "duration": 2.5,
+      "component": "SectionTitle",
+      "props": { "variant": "plain", "label": "Tips" }
+    },
+    {
+      "id": 36,
+      "section": "Tips",
+      "type": "info",
+      "text": "モデル：0.6B（軽量・高速）／ 1.7B（高品質・NVIDIA GPU推奨）",
+      "alpha": false,
+      "duration": 5,
+      "component": "InfoBar",
+      "props": { "size": "m", "codes": ["0.6B", "1.7B"], "centered": true }
+    },
+    {
+      "id": 37,
+      "section": "Tips",
+      "type": "info",
+      "text": "出力先：プロジェクトフォルダ内 LocalNarratorTTS_Audio",
+      "alpha": true,
+      "duration": 4,
+      "component": "InfoBar",
+      "props": { "size": "s", "codes": ["LocalNarratorTTS_Audio"] }
+    },
+    {
+      "id": 38,
+      "section": "Tips",
+      "type": "info",
+      "text": "末尾が途切れる → 句読点を付ける ／ 捨て文を追加",
+      "alpha": true,
+      "duration": 5,
+      "component": "InfoBar",
+      "props": { "size": "m" }
+    },
+    {
+      "id": 39,
+      "section": "Tips",
+      "type": "info",
+      "text": "セグメント間の切れ目 → トリム・クロスフェードで調整",
+      "alpha": true,
+      "duration": 5,
+      "component": "InfoBar",
+      "props": { "size": "m" }
+    },
+    {
+      "id": 40,
+      "section": "まとめ",
+      "type": "impact",
+      "text": "ナレーション作成はテキストを打つだけ",
+      "alpha": false,
+      "duration": 4,
+      "component": "Impact",
+      "props": { "size": "xl", "highlight": "テキストを打つだけ" }
+    },
+    {
+      "id": 41,
+      "section": "まとめ",
+      "type": "list_item",
+      "text": "ボイスクローン ／ ローカル ／ 高速 ／ バリエーション ／ 自動分割",
+      "alpha": false,
+      "duration": 4,
+      "component": "ListScreen",
+      "props": {
+        "variant": "tags",
+        "items": [
+          { "label": "🎙️ ボイスクローン" },
+          { "label": "🔒 完全ローカル" },
+          { "label": "⚡ 高速サーバーモード" },
+          { "label": "🎲 バリエーション" },
+          { "label": "📄 長文自動分割" }
+        ]
+      }
+    },
+    {
+      "id": 42,
+      "section": "エンディング",
+      "type": "end_card",
+      "text": "チャンネル登録・高評価よろしくお願いします",
+      "alpha": false,
+      "duration": 8,
+      "component": "EndCard",
+      "props": {}
+    }
+  ]
+}
