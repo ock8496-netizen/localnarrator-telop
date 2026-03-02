@@ -12,6 +12,7 @@ type Props = {
   afterValue: number;
   afterUnit?: string;
   speedup?: string; // "最大60%高速化"
+  transparent?: boolean;
 };
 
 export const Comparison: React.FC<Props> = ({
@@ -20,6 +21,7 @@ export const Comparison: React.FC<Props> = ({
   beforeUnit = "秒",
   afterLabel = "サーバーモード",
   afterValue,
+  transparent,
   afterUnit = "秒",
   speedup = "最大60%高速化",
 }) => {
@@ -40,7 +42,7 @@ export const Comparison: React.FC<Props> = ({
   };
 
   return (
-    <DarkBg>
+    <DarkBg transparent={transparent}>
       <div style={{ opacity: bgFade }}>
         <Glow top={50} right={100} />
         <Glow bottom={50} left={200} size={400} />

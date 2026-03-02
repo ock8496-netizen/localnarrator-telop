@@ -1,6 +1,5 @@
 // ListScreen.tsx
 import React from "react";
-import { Trail } from "@remotion/motion-blur";
 import { colors, fonts, sizes } from "./theme";
 import { useSlideUp, useFadeIn, staggerDelay } from "./animations";
 import { Glow, YellowRule, DarkBg } from "./shared";
@@ -11,18 +10,31 @@ type Props = {
   variant: "list" | "tags";
   header?: string;
   items: ListItem[];
+  transparent?: boolean;
 };
 
 export const ListScreen: React.FC<Props> = ({
   variant,
   header,
   items,
+  transparent = false,
 }) => {
   const bgFade = useFadeIn(0, 12);
 
+  const tagAnims = [
+    useSlideUp(staggerDelay(0, 6) + 5),
+    useSlideUp(staggerDelay(1, 6) + 5),
+    useSlideUp(staggerDelay(2, 6) + 5),
+    useSlideUp(staggerDelay(3, 6) + 5),
+    useSlideUp(staggerDelay(4, 6) + 5),
+    useSlideUp(staggerDelay(5, 6) + 5),
+    useSlideUp(staggerDelay(6, 6) + 5),
+    useSlideUp(staggerDelay(7, 6) + 5),
+  ];
+
   if (variant === "tags") {
     return (
-      <DarkBg>
+      <DarkBg transparent={transparent}>
         <div style={{ opacity: bgFade }}>
           <Glow top={200} left="50%" />
           <div
@@ -33,30 +45,30 @@ export const ListScreen: React.FC<Props> = ({
               transform: "translate(-50%, -50%)",
               display: "flex",
               flexWrap: "wrap",
-              gap: 16,
+              gap: 24,
               justifyContent: "center",
+              maxWidth: 1400,
             }}
           >
             {items.map((item, i) => {
-              const anim = useSlideUp(staggerDelay(i, 6) + 5);
               return (
-                <Trail key={i} layers={3} lagInFrames={2} trailOpacity={0.5}>
                 <div
+                  key={i}
                   style={{
                     background: colors.bgCard,
                     border: `1px solid ${colors.border}`,
                     borderRadius: 100,
-                    padding: "14px 28px",
-                    fontSize: 20,
+                    padding: "24px 48px",
+                    fontSize: 56,
                     fontWeight: 600,
                     color: colors.text,
                     fontFamily: fonts.ja,
-                    ...anim,
+                    whiteSpace: "nowrap",
+                    ...tagAnims[i],
                   }}
                 >
                   {item.label}
                 </div>
-                </Trail>
               );
             })}
           </div>
@@ -67,7 +79,7 @@ export const ListScreen: React.FC<Props> = ({
 
   // variant === "list"
   return (
-    <DarkBg>
+    <DarkBg transparent={transparent}>
       <div style={{ opacity: bgFade }}>
         <Glow top={-100} right={100} />
         {/* Header */}
@@ -103,7 +115,7 @@ export const ListScreen: React.FC<Props> = ({
           }}
         >
           {items.map((item, i) => {
-            const anim = useSlideUp(staggerDelay(i, 6) + 8);
+            const anim = tagAnims[i] ?? tagAnims[0];
             return (
               <div
                 key={i}

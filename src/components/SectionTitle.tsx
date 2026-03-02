@@ -13,6 +13,7 @@ type Props = {
   step?: number;
   total?: number;
   showTimeline?: boolean;
+  transparent?: boolean;
 };
 
 export const SectionTitle: React.FC<Props> = ({
@@ -22,6 +23,7 @@ export const SectionTitle: React.FC<Props> = ({
   step,
   total = 6,
   showTimeline = false,
+  transparent = false,
 }) => {
   const pillAnim = useSlideUp(5);
   const titleAnim = useSlideUp(10);
@@ -48,7 +50,7 @@ export const SectionTitle: React.FC<Props> = ({
 
   if (variant === "plain") {
     return (
-      <DarkBg>
+      <DarkBg transparent={transparent}>
         <div style={{ opacity: bgFade }}>
           {/* グロー：右上 大 + 左下 小 */}
           <Glow top={-160} right={-80} size={700} />
@@ -199,7 +201,7 @@ export const SectionTitle: React.FC<Props> = ({
   // variant === "step"
   const stepStr = String(step).padStart(2, "0");
   return (
-    <DarkBg>
+    <DarkBg transparent={transparent}>
       <div style={{ opacity: bgFade }}>
         <Glow top={-200} right={-100} />
         <Glow top={undefined} bottom={-100} left={200} size={400} />

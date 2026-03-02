@@ -177,9 +177,9 @@ export const YellowRule: React.FC<{ width?: string }> = ({ width = "100%" }) => 
 );
 
 /* ━━━ フルスクリーン背景 ━━━ */
-export const DarkBg: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <AbsoluteFill style={{ background: colors.bgPrimary }}>
+export const DarkBg: React.FC<{ children: React.ReactNode; transparent?: boolean }> = ({ children, transparent }) => (
+  <AbsoluteFill style={{ background: transparent ? "transparent" : colors.bgPrimary }}>
     {children}
-    <NoiseOverlay />
+    {!transparent && <NoiseOverlay />}
   </AbsoluteFill>
 );

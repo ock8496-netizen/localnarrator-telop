@@ -9,6 +9,7 @@ type Props = {
   highlight?: string;
   subtitle?: string;
   features?: string[];
+  transparent?: boolean;
 };
 
 export const EndCard: React.FC<Props> = ({
@@ -16,6 +17,7 @@ export const EndCard: React.FC<Props> = ({
   highlight = "テキストを打つだけ",
   subtitle = "LocalNarratorTTS — 完全ローカル・API不要・音声データ外部送信なし",
   features = ["ボイスクローン", "完全ローカル", "高速サーバーモード", "バリエーション生成", "長文自動分割"],
+  transparent = false,
 }) => {
   const bgFade = useFadeIn(0, 12);
   const logoAnim = useScaleIn(5);
@@ -24,7 +26,7 @@ export const EndCard: React.FC<Props> = ({
   const btnsAnim = useSlideUp(24);
 
   return (
-    <DarkBg>
+    <DarkBg transparent={transparent}>
       <div style={{ opacity: bgFade }}>
         <Glow top={100} left="50%" size={800} />
         <div

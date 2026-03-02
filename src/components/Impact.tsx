@@ -11,6 +11,7 @@ type Props = {
   highlight?: string; // イエロー＋イタリックにする部分
   sub?: string;
   showTimeline?: boolean;
+  transparent?: boolean;
 };
 
 // 助詞・接続詞などの短い文字を中間行に分離するパターン
@@ -22,6 +23,7 @@ export const Impact: React.FC<Props> = ({
   highlight,
   sub,
   showTimeline = false,
+  transparent,
 }) => {
   const bgFade = useFadeIn(0, 12);
   const line1Anim = useSlideUp(6);
@@ -79,7 +81,7 @@ export const Impact: React.FC<Props> = ({
   };
 
   return (
-    <DarkBg>
+    <DarkBg transparent={transparent}>
       <div style={{ opacity: bgFade }}>
         {/* メイングロー：中央上 */}
         <Glow top={-60} left="30%" size={700} />

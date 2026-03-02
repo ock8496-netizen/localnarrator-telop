@@ -7,9 +7,10 @@ import { Glow, DarkBg } from "./shared";
 
 type Props = {
   text: string;
-  size?: "m" | "s";
+  size?: "xl" | "l" | "m" | "s";
   codes?: string[]; // モノスペース＋イエローで表示する部分
   centered?: boolean; // trueならフルスクリーン中央配置
+  transparent?: boolean;
 };
 
 export const InfoBar: React.FC<Props> = ({
@@ -17,11 +18,12 @@ export const InfoBar: React.FC<Props> = ({
   size = "m",
   codes = [],
   centered = false,
+  transparent = false,
 }) => {
   const slideAnim = useSlideLeft(5);
-  const fontSize = size === "m" ? 28 : 24;
-  const padding = size === "m" ? "16px 32px 16px 24px" : "12px 28px 12px 20px";
-  const iconSize = size === "m" ? 36 : 32;
+  const fontSize = size === "xl" ? 44 : size === "l" ? 36 : size === "m" ? 28 : 24;
+  const padding = size === "xl" ? "24px 48px 24px 36px" : size === "l" ? "20px 40px 20px 30px" : size === "m" ? "16px 32px 16px 24px" : "12px 28px 12px 20px";
+  const iconSize = size === "xl" ? 52 : size === "l" ? 44 : size === "m" ? 36 : 32;
 
   /** テキスト内の codes 部分をハイライト */
   const renderText = () => {
@@ -125,7 +127,7 @@ export const InfoBar: React.FC<Props> = ({
 
   if (centered) {
     return (
-      <DarkBg>
+      <DarkBg transparent={transparent}>
         <Glow top={200} left={400} />
         <div
           style={{

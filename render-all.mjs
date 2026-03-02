@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// render-all.mjs — 全テロップ一括レンダリング（SE付き MP4）
+// render-all.mjs — 全テロップ一括レンダリング（SE付き ProRes4444 アルファ付き）
 import { execSync } from "child_process";
 import { mkdirSync } from "fs";
 import { createRequire } from "module";
@@ -11,7 +11,7 @@ mkdirSync(OUTPUT_DIR, { recursive: true });
 
 const activeTelops = telopsData.telops.filter((t) => (t.duration ?? 0) > 0);
 
-console.log(`\n🎬 LocalNarratorTTS テロップ一括レンダリング（SE付き・MP4）`);
+console.log(`\n🎬 LocalNarratorTTS テロップ一括レンダリング（SE付き・ProRes4444 アルファ付き）`);
 console.log(`対象: ${activeTelops.length}件\n`);
 
 let success = 0;
@@ -20,13 +20,18 @@ let fail = 0;
 for (const telop of activeTelops) {
   const id = String(telop.id).padStart(2, "0");
   const compId = `telop-${id}`;
-  const outputFile = `${OUTPUT_DIR}/${id}_${telop.type}.mp4`;
+  const outputFile = `${OUTPUT_DIR}/${id}_${telop.type}.mov`;
+
+  // telop データと transparent フラグを両方渡す
+  const props = JSON.stringify({ telop, transparent: true });
+  // シェルのシングルクォート内でエスケープ
+  const escapedProps = props.replace(/'/g, "'\\''");
 
   console.log(`[${id}] ${telop.text.slice(0, 40)}...`);
 
   try {
     execSync(
-      `npx remotion render src/index.ts ${compId} "${outputFile}" --codec=h264 --crf=16`,
+      `npx remotion render src/index.ts ${compId} "${outputFile}" --codec=prores --prores-profile=4444 --image-format=png --pixel-format=yuva444p10le --props='${escapedProps}'`,
       { stdio: "inherit" }
     );
     success++;
@@ -38,3 +43,4 @@ for (const telop of activeTelops) {
 }
 
 console.log(`\n完了: 成功 ${success}件 / 失敗 ${fail}件`);
+console.log(`出力先: ${OUTPUT_DIR}/ (ProRes4444 .mov)`);

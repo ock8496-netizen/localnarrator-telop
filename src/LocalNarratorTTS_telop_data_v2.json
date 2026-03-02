@@ -1,7 +1,10 @@
 {
   "meta": {
     "project": "LocalNarratorTTS チュートリアル動画",
-    "canvas": { "width": 1920, "height": 1080 },
+    "canvas": {
+      "width": 1920,
+      "height": 1080
+    },
     "fps": 30,
     "version": "v2",
     "note": "alpha=true はオーバーレイ用（透過背景で書き出し）。alpha=false はフルスクリーングラフィック。duration は秒。component は Remotion コンポーネント名。"
@@ -15,7 +18,9 @@
       "alpha": false,
       "duration": 3,
       "component": "Impact",
-      "props": { "size": "xl" }
+      "props": {
+        "size": "xl"
+      }
     },
     {
       "id": 2,
@@ -25,7 +30,11 @@
       "alpha": false,
       "duration": 4,
       "component": "Impact",
-      "props": { "size": "xl", "highlight": "音声を差し替え", "showTimeline": true }
+      "props": {
+        "size": "xl",
+        "highlight": "音声を差し替え",
+        "showTimeline": true
+      }
     },
     {
       "id": 3,
@@ -35,7 +44,10 @@
       "alpha": true,
       "duration": 3,
       "component": "Note",
-      "props": { "position": "bottom-right", "prefix": "※" }
+      "props": {
+        "position": "bottom-right",
+        "prefix": "※"
+      }
     },
     {
       "id": 4,
@@ -45,7 +57,9 @@
       "alpha": true,
       "duration": 3,
       "component": "Note",
-      "props": { "position": "bottom-center" }
+      "props": {
+        "position": "bottom-center"
+      }
     },
     {
       "id": 5,
@@ -55,7 +69,11 @@
       "alpha": false,
       "duration": 2.5,
       "component": "SectionTitle",
-      "props": { "variant": "plain", "label": "できること" }
+      "props": {
+        "variant": "plain",
+        "label": "できること",
+        "showTimeline": true
+      }
     },
     {
       "id": 6,
@@ -69,10 +87,18 @@
         "variant": "list",
         "header": "できること",
         "items": [
-          { "label": "ボイスクローンで音声差し替え" },
-          { "label": "タイムラインに自動配置" },
-          { "label": "サーバーモードで高速生成" },
-          { "label": "バリエーション生成" }
+          {
+            "label": "ボイスクローンで音声差し替え"
+          },
+          {
+            "label": "タイムラインに自動配置"
+          },
+          {
+            "label": "サーバーモードで高速生成"
+          },
+          {
+            "label": "バリエーション生成"
+          }
         ]
       },
       "note": "ID 6-9 を1画面にまとめて表示"
@@ -118,7 +144,10 @@
       "alpha": false,
       "duration": 4,
       "component": "Impact",
-      "props": { "size": "l", "sub": "音声データは一切外部に送信されません" }
+      "props": {
+        "size": "l",
+        "sub": "音声データは一切外部に送信されません"
+      }
     },
     {
       "id": 11,
@@ -128,7 +157,13 @@
       "alpha": true,
       "duration": 4,
       "component": "InfoBar",
-      "props": { "size": "m", "codes": ["300文字以上"] }
+      "props": {
+        "size": "l",
+        "codes": [
+          "300文字以上"
+        ],
+        "centered": true
+      }
     },
     {
       "id": 12,
@@ -138,7 +173,14 @@
       "alpha": false,
       "duration": 3,
       "component": "SectionTitle",
-      "props": { "variant": "step", "step": 1, "total": 6, "label": "インストール：Mac", "highlight": "Mac" }
+      "props": {
+        "variant": "step",
+        "step": 1,
+        "total": 6,
+        "label": "インストール：Mac",
+        "highlight": "Mac",
+        "showTimeline": true
+      }
     },
     {
       "id": 13,
@@ -148,7 +190,12 @@
       "alpha": true,
       "duration": 5,
       "component": "InfoBar",
-      "props": { "size": "m", "codes": ["install.command"] }
+      "props": {
+        "size": "m",
+        "codes": [
+          "install.command"
+        ]
+      }
     },
     {
       "id": 14,
@@ -158,7 +205,9 @@
       "alpha": true,
       "duration": 5,
       "component": "InfoBar",
-      "props": { "size": "m" }
+      "props": {
+        "size": "m"
+      }
     },
     {
       "id": 15,
@@ -168,7 +217,14 @@
       "alpha": false,
       "duration": 3,
       "component": "SectionTitle",
-      "props": { "variant": "step", "step": 1, "total": 6, "label": "インストール：Windows", "highlight": "Windows" }
+      "props": {
+        "variant": "step",
+        "step": 1,
+        "total": 6,
+        "label": "インストール：Windows",
+        "highlight": "Windows",
+        "showTimeline": true
+      }
     },
     {
       "id": 16,
@@ -178,7 +234,12 @@
       "alpha": true,
       "duration": 5,
       "component": "InfoBar",
-      "props": { "size": "m", "codes": ["install.bat"] }
+      "props": {
+        "size": "m",
+        "codes": [
+          "install.bat"
+        ]
+      }
     },
     {
       "id": 17,
@@ -188,7 +249,9 @@
       "alpha": true,
       "duration": 4,
       "component": "InfoBar",
-      "props": { "size": "m" }
+      "props": {
+        "size": "m"
+      }
     },
     {
       "id": 18,
@@ -198,7 +261,12 @@
       "alpha": true,
       "duration": 5,
       "component": "InfoBar",
-      "props": { "size": "m", "codes": ["Local TTS Narrator"] }
+      "props": {
+        "size": "m",
+        "codes": [
+          "Local TTS Narrator"
+        ]
+      }
     },
     {
       "id": 19,
@@ -208,7 +276,12 @@
       "alpha": false,
       "duration": 3,
       "component": "SectionTitle",
-      "props": { "variant": "step", "step": 1, "total": 6 }
+      "props": {
+        "variant": "step",
+        "step": 1,
+        "total": 6,
+        "showTimeline": true
+      }
     },
     {
       "id": 20,
@@ -218,7 +291,9 @@
       "alpha": true,
       "duration": 4,
       "component": "InfoBar",
-      "props": { "size": "s" }
+      "props": {
+        "size": "s"
+      }
     },
     {
       "id": 21,
@@ -228,7 +303,12 @@
       "alpha": true,
       "duration": 4,
       "component": "InfoBar",
-      "props": { "size": "m", "codes": ["6秒以上"] }
+      "props": {
+        "size": "m",
+        "codes": [
+          "6秒以上"
+        ]
+      }
     },
     {
       "id": 22,
@@ -238,7 +318,12 @@
       "alpha": true,
       "duration": 4,
       "component": "InfoBar",
-      "props": { "size": "m", "codes": ["Reference Transcript"] }
+      "props": {
+        "size": "m",
+        "codes": [
+          "Reference Transcript"
+        ]
+      }
     },
     {
       "id": 23,
@@ -248,7 +333,12 @@
       "alpha": false,
       "duration": 3,
       "component": "SectionTitle",
-      "props": { "variant": "step", "step": 2, "total": 6 }
+      "props": {
+        "variant": "step",
+        "step": 2,
+        "total": 6,
+        "showTimeline": true
+      }
     },
     {
       "id": 24,
@@ -258,7 +348,13 @@
       "alpha": false,
       "duration": 3,
       "component": "SectionTitle",
-      "props": { "variant": "step", "step": 3, "total": 6, "highlight": "生成", "showTimeline": true }
+      "props": {
+        "variant": "step",
+        "step": 3,
+        "total": 6,
+        "highlight": "生成",
+        "showTimeline": true
+      }
     },
     {
       "id": 25,
@@ -268,7 +364,9 @@
       "alpha": true,
       "duration": 3,
       "component": "Note",
-      "props": { "position": "bottom-right" }
+      "props": {
+        "position": "bottom-right"
+      }
     },
     {
       "id": 26,
@@ -278,7 +376,10 @@
       "alpha": false,
       "duration": 3.5,
       "component": "Impact",
-      "props": { "size": "l", "highlight": "1ボタンで完結" }
+      "props": {
+        "size": "l",
+        "highlight": "1ボタンで完結"
+      }
     },
     {
       "id": 27,
@@ -288,7 +389,13 @@
       "alpha": false,
       "duration": 3,
       "component": "SectionTitle",
-      "props": { "variant": "step", "step": 4, "total": 6, "highlight": "高速化" }
+      "props": {
+        "variant": "step",
+        "step": 4,
+        "total": 6,
+        "highlight": "高速化",
+        "showTimeline": true
+      }
     },
     {
       "id": 28,
@@ -314,7 +421,12 @@
       "alpha": false,
       "duration": 3,
       "component": "SectionTitle",
-      "props": { "variant": "step", "step": 5, "total": 6 }
+      "props": {
+        "variant": "step",
+        "step": 5,
+        "total": 6,
+        "showTimeline": true
+      }
     },
     {
       "id": 30,
@@ -324,7 +436,12 @@
       "alpha": true,
       "duration": 5,
       "component": "InfoBar",
-      "props": { "size": "m", "codes": ["2〜5テイク"] }
+      "props": {
+        "size": "m",
+        "codes": [
+          "2〜5テイク"
+        ]
+      }
     },
     {
       "id": 31,
@@ -334,7 +451,9 @@
       "alpha": true,
       "duration": 3,
       "component": "Note",
-      "props": { "position": "bottom-right" }
+      "props": {
+        "position": "bottom-right"
+      }
     },
     {
       "id": 32,
@@ -344,7 +463,13 @@
       "alpha": false,
       "duration": 3,
       "component": "SectionTitle",
-      "props": { "variant": "step", "step": 6, "total": 6, "highlight": "自動分割" }
+      "props": {
+        "variant": "step",
+        "step": 6,
+        "total": 6,
+        "highlight": "自動分割",
+        "showTimeline": true
+      }
     },
     {
       "id": 33,
@@ -354,7 +479,12 @@
       "alpha": true,
       "duration": 5,
       "component": "InfoBar",
-      "props": { "size": "m", "codes": ["300文字以上"] }
+      "props": {
+        "size": "m",
+        "codes": [
+          "300文字以上"
+        ]
+      }
     },
     {
       "id": 34,
@@ -364,7 +494,13 @@
       "alpha": true,
       "duration": 4,
       "component": "InfoBar",
-      "props": { "size": "s", "codes": ["1000文字 ≒ 90秒", "3000文字 ≒ 5分"] }
+      "props": {
+        "size": "s",
+        "codes": [
+          "1000文字 ≒ 90秒",
+          "3000文字 ≒ 5分"
+        ]
+      }
     },
     {
       "id": 35,
@@ -374,7 +510,11 @@
       "alpha": false,
       "duration": 2.5,
       "component": "SectionTitle",
-      "props": { "variant": "plain", "label": "Tips" }
+      "props": {
+        "variant": "plain",
+        "label": "Tips",
+        "showTimeline": true
+      }
     },
     {
       "id": 36,
@@ -384,7 +524,14 @@
       "alpha": false,
       "duration": 5,
       "component": "InfoBar",
-      "props": { "size": "m", "codes": ["0.6B", "1.7B"], "centered": true }
+      "props": {
+        "size": "m",
+        "codes": [
+          "0.6B",
+          "1.7B"
+        ],
+        "centered": true
+      }
     },
     {
       "id": 37,
@@ -394,7 +541,13 @@
       "alpha": true,
       "duration": 4,
       "component": "InfoBar",
-      "props": { "size": "s", "codes": ["LocalNarratorTTS_Audio"] }
+      "props": {
+        "size": "m",
+        "codes": [
+          "LocalNarratorTTS_Audio"
+        ],
+        "centered": true
+      }
     },
     {
       "id": 38,
@@ -404,7 +557,10 @@
       "alpha": true,
       "duration": 5,
       "component": "InfoBar",
-      "props": { "size": "m" }
+      "props": {
+        "size": "l",
+        "centered": true
+      }
     },
     {
       "id": 39,
@@ -414,7 +570,10 @@
       "alpha": true,
       "duration": 5,
       "component": "InfoBar",
-      "props": { "size": "m" }
+      "props": {
+        "size": "l",
+        "centered": true
+      }
     },
     {
       "id": 40,
@@ -424,7 +583,10 @@
       "alpha": false,
       "duration": 4,
       "component": "Impact",
-      "props": { "size": "xl", "highlight": "テキストを打つだけ" }
+      "props": {
+        "size": "xl",
+        "highlight": "テキストを打つだけ"
+      }
     },
     {
       "id": 41,
@@ -437,11 +599,21 @@
       "props": {
         "variant": "tags",
         "items": [
-          { "label": "🎙️ ボイスクローン" },
-          { "label": "🔒 完全ローカル" },
-          { "label": "⚡ 高速サーバーモード" },
-          { "label": "🎲 バリエーション" },
-          { "label": "📄 長文自動分割" }
+          {
+            "label": "🎙️ ボイスクローン"
+          },
+          {
+            "label": "🔒 完全ローカル"
+          },
+          {
+            "label": "⚡ 高速サーバーモード"
+          },
+          {
+            "label": "🎲 バリエーション"
+          },
+          {
+            "label": "📄 長文自動分割"
+          }
         ]
       }
     },

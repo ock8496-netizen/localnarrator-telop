@@ -21,17 +21,18 @@ type Telop = {
 
 /** コンポーネント種別ごとのSEマッピング */
 const SE_MAP: Record<string, { file: string; startFrom?: number; volume?: number }> = {
-  Impact:       { file: "se/impact.mp3",       volume: 1.0 },
-  SectionTitle: { file: "se/swoosh.mp3",        volume: 0.85 },
-  InfoBar:      { file: "se/pop.mp3",           volume: 0.8 },
-  Note:         { file: "se/notification.mp3",  volume: 0.7 },
-  ListScreen:   { file: "se/swoosh.mp3",        volume: 0.75 },
-  Comparison:   { file: "se/reveal.mp3",        volume: 0.9 },
-  EndCard:      { file: "se/chime.mp3",         volume: 0.85 },
+  Impact:       { file: "se/impact.mp3",        volume: 1.0 },
+  SectionTitle: { file: "se/swoosh.mp3",         volume: 0.85 },
+  InfoBar:      { file: "se/pop.mp3",            volume: 0.8 },
+  Note:         { file: "se/notification.mp3",   volume: 0.7 },
+  ListScreen:   { file: "se/list_item.mp3",      volume: 0.75 },
+  Comparison:   { file: "se/reveal.mp3",         volume: 0.9 },
+  EndCard:      { file: "se/chime.mp3",          volume: 0.85 },
 };
 
-export const TelopComposition: React.FC<{ telop: Telop }> = ({ telop }) => {
+export const TelopComposition: React.FC<{ telop: Telop; transparent?: boolean }> = ({ telop, transparent }) => {
   const { component, text, props } = telop;
+  const allProps = { ...props, transparent };
   const se = SE_MAP[component];
 
   const seAudio = se ? (
@@ -45,19 +46,19 @@ export const TelopComposition: React.FC<{ telop: Telop }> = ({ telop }) => {
   const renderComponent = () => {
     switch (component) {
       case "Impact":
-        return <Impact text={text} {...props} />;
+        return <Impact text={text} {...allProps} />;
 
       case "SectionTitle":
-        return <SectionTitle label={text} variant={props.variant ?? "plain"} {...props} />;
+        return <SectionTitle label={text} variant={props.variant ?? "plain"} {...allProps} />;
 
       case "InfoBar":
-        return <InfoBar text={text} {...props} />;
+        return <InfoBar text={text} {...allProps} />;
 
       case "Note":
-        return <Note text={text} {...props} />;
+        return <Note text={text} {...allProps} />;
 
       case "ListScreen":
-        return <ListScreen variant={props.variant ?? "list"} items={props.items ?? []} {...props} />;
+        return <ListScreen variant={props.variant ?? "list"} items={props.items ?? []} {...allProps} />;
 
       case "Comparison": {
         const before = props.before ?? 25;
